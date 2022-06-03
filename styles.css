@@ -91,6 +91,10 @@ p{
     background-color: white;
 }
 
+.link__hover-effect--purple:after{
+    background-color: #8c52ff;
+}
+
 input, textarea{
     width: 100%;
     background-color: #242424;
