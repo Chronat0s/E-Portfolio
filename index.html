@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="google-site-verification"
+        content="bpy2uolGJWoKNgYbsvvsimdqbgnRrn4cNrFq7OnGKrk" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js"
+        crossorigin="anonymous"></script>
+    <title>Iraklis Roussos</title>
+    <script src="portfolio.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("2IfYNLlIBARLUamsK");
+        })();
+    </script>
+</head>
+
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/personal-logo.jpg" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black"
+                        onclick="toggleModal()">About</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#projects" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black">Projects</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black"
+                        onclick="toggleModal()">Contact</a>
+                </li>
+                <li class="nav__link">
+                    <a href="#" class="
+                    nav__link--anchor
+                    link__hover-effect
+                    link__hover-effect--black"><i class="fas fa-adjust"
+                            onclick="toggleContrast()"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey there,</h1>
+                <h1 class="title purple">I'm Iraklis!</h1>
+                <p class="header__para">
+                    I'm an aspiring <b class="purple">Frontend Software
+                        Engineer</b>, who is seeking an <b
+                        class="purple">internship</b> position. <br> I have a
+                    passion for designing interactive websites with a simple and
+                    satisfying UI and a desire to <b class="purple">improve my
+                        skillset</b> in order to create more complex projects.
+                    <br> Here's a bit more <b class="purple click"
+                        onclick="toggleModal()">about me!</b>
+                </p>
+                <div class="social__list">
+                    <a href="https://www.linkedin.com/in/iraklis-roussos-a8a9b2211/"
+                        class="social__link click" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Chronat0s"
+                        class="social__link click" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="assets/Iraklis Roussos Resume.pdf"
+                        class="social__link click" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <a href="#">
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fas fa-envelope"></i>
+            </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit about
+                    me.
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Aspiring
+                    Frontend Software Engineer</h4>
+                <p class="modal__para modal__para--about">
+                    I'm a 21 year old Sydney based, Australian 3rd year,
+                    university student who is seeking commercial experience in
+                    Frontend development.
+                    <br> Projects I have worked on in my spare time can be seen
+                    below in the
+                    <a href="#projects"
+                        class="link__hover-effect link__hover-effect--purple"
+                        onclick=toggleModal()><b class="purple">projects</b></a>
+                    section of this e-portfolio.
+                </p>
+                <h3 class="modal__title modal__title--about">My Tech Stack</h4>
+                    <div class="modal__languages">
+                        <figure class="modal__language">
+                            <img class="modal__language--image"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1024px-HTML5_Badge.svg.png"
+                                alt="">
+                            <span class="modal__language--name">HTML</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--image"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png"
+                                alt="">
+                            <span class="modal__language--name">CSS</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--image"
+                                src="https://www.logolynx.com/images/logolynx/54/54b5145b027a1ff11962bdf475c3fd43.png"
+                                alt="">
+                            <span
+                                class="modal__language--name">JavaScript</span>
+                        </figure>
+                        <figure class="modal__language">
+                            <img class="modal__language--image"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                                alt="">
+                            <span class="modal__language--name">React</span>
+                        </figure>
+                    </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click"
+                    onclick="toggleModal()"></i>
+                <h3 class="modal__title modal__title--contact">Let's have a
+                    chat!
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">I'm
+                    currently open to new opportunities.</h4>
+                <form onsubmit="contact()" id="contact__form">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input type="text" class="input" name="user_name"
+                            required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input type="email" class="input" name="user_email"
+                            required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea type="text" class="input" name="message"
+                            required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send it my
+                        way!</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message! Looking forward to speaking to you
+                    soon.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/semi circle.svg" class="shape shape--0">
+        <img src="./assets/circle.svg" class="shape shape--1">
+        <img src="./assets/squiggly.svg" class="shape shape--2">
+        <img src="./assets/circle.svg" class="shape shape--3">
+        <img src="./assets/triangle.svg" class="shape shape--4">
+        <img src="./assets/circle.svg" class="shape shape--5">
+        <img src="./assets/squiggly.svg" class="shape shape--6">
+        <img src="./assets/circle.svg" class="shape shape--7">
+        <img src="./assets/semi circle.svg" class="shape shape--8">
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="purple">Projects.</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Blackjack.jpg" alt=""
+                                class="project__img">
+                            <div class="project__wrapper--background"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Blackjack Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    An interactive blackjack application which
+                                    through JavaScript randomly selects 1 of 4
+                                    arrays of objects for each suit of cards and
+                                    selects 1 of 13 cards from the array.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Chronat0s/Blackjack-App/"
+                                        target="_blank"
+                                        class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://chronat0s.github.io/Blackjack-App/"
+                                        target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/PremierLeagueHeritage.jpg" alt=""
+                                class="project__img">
+                            <div class="project__wrapper--background"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Premier League Heritage Project
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Utilised JavaScript to fetch data from an
+                                    external API, allowing for the dynamic
+                                    display of data from over 20 seasons of the
+                                    English Premier League. This data was
+                                    utilised to display the Premier League table
+                                    over the last 20 years.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Chronat0s/Premier-League-Heritage"
+                                        target="_blank"
+                                        class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://chronat0s.github.io/Premier-League-Heritage/"
+                                        target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/PokemonWordle.jpg" alt=""
+                                class="project__img">
+                            <div class="project__wrapper--background"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Pokemon Wordle-Like Clone
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Utilised JavaScript to fetch data from an
+                                    external API allowing for the comparison of
+                                    user inputted 'guess' Pokemon to a randomly
+                                    generated mystery Pokemon from the system.
+                                    <br>
+                                    <br> Utilised higher order array methods to
+                                    allow for the dynamic response of an
+                                    autocomplete dropdown menu according to user
+                                    input.
+                                    <br>
+                                    <br> Utilised Objects and ForEach Loops to
+                                    allow previous guesses to remain displayed
+                                    when there is a new guess.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Chronat0s/Who-s-That-Pokemon-Game-Project"
+                                        target="_blank"
+                                        class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://chronat0s.github.io/Who-s-That-Pokemon-Game-Project/"
+                                        target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Netflix Clone.png" alt=""
+                                class="project__img">
+                            <div class="project__wrapper--background"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Netflix Clone
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JavaScript, React
+                                </h4>
+                                <p class="project__description--para">
+                                    Utilised JavaScript to fetch data from an
+                                    external API allowing for the comparison of
+                                    user inputted 'guess' Pokemon to a randomly
+                                    generated mystery Pokemon from the system.
+                                    <br>
+                                    <br> Utilised higher order array methods to
+                                    allow for the dynamic response of an
+                                    autocomplete dropdown menu according to user
+                                    input.
+                                    <br>
+                                    <br> Utilised Objects and ForEach Loops to
+                                    allow previous guesses to remain displayed
+                                    when there is a new guess.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Chronat0s/Netflix-Clone"
+                                        target="_blank"
+                                        class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure class="footer__logo">
+                    <img src="./assets/personal-logo.jpg" alt=""
+                        class="footer__logo--image">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="https://github.com/Chronat0s" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white" target="_blank">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/iraklis-roussos-a8a9b2211/"
+                        class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white" target="_blank">
+                        LinkedIn
+                    </a>
+                    <a href="#" class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white" onclick="toggleModal()">
+                        Contact
+                    </a>
+                    <a href="assets/Iraklis Roussos Resume.pdf" target="_blank"
+                        class="
+                    footer__social--link
+                    link__hover-effect
+                    link__hover-effect--white">
+                        Resume
+                    </a>
+                </div>
+                <div class="footer__copyright">
+                    Copyright &copy; 2022 Iraklis Roussos
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
